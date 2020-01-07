@@ -1,0 +1,229 @@
+// main: ../style.less
+
+.header__top-inner{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 34px;
+    padding: 12.5px 0;
+}
+.header__adress, .header__email, .header__logo{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    
+    a{
+        color: @black;
+    }
+}
+
+.header__adress{
+    white-space: pre-wrap;
+    
+    img{
+        height: 18px;
+        width: auto;
+        margin-right: 13px;
+        margin-left: 2px;
+    }
+}
+.header__email{
+    img{
+        width: 17px;
+        height: 12px;
+        margin-right: 15px;
+    }
+}
+.header__phone{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    
+    img{
+        width: auto;
+        height: 22px;
+        margin-right: 15px;
+    }
+    .header__phone-num a{
+        font-size: 16px;
+        line-height: 30px;
+        color: @black;
+        display: block;
+    }
+    
+}
+
+.header__nav {
+    border-top: 1px solid @blue-light;
+    border-bottom: 1px solid @blue-light;
+    
+    ul{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 18px 0;
+    }
+}
+.header__nav-link{
+    position: relative;
+//    transition: all .5s;
+    
+    a{
+        line-height: 30px;
+        color: @black; 
+        
+    }
+    &:hover a{
+        font-weight:600;
+        color: @blue;
+    }
+    a::after{
+        content:'';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: @yellow;
+        bottom: 2px;
+        left: 0;
+        transform: scale(0)
+    }
+    &:hover a::after{
+        transform: scale(1)
+    }
+}
+#consultation, #phone-mob, .header__top-mob{
+    display: none;
+}
+.header__top-mob{
+    position: relative;
+}
+.header__toggle{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    width: 34px;
+    padding: 10px 0;
+    display: none;
+    cursor: pointer;
+    border: 0;
+    background: none;
+    transform: translateY(-50%);
+    
+    &.active &-item{
+        background: none;
+    }
+    &.active &-item:before{
+        transform-origin: left top;
+        transform: rotate(45deg) translateY(-4px);
+        transition: transform 0.5s linear;
+    }
+    &.active &-item:after{
+        transform-origin: left bottom;
+        transform: rotate(-45deg) translate3d(-1px,5px,0);
+    }
+    &-item{
+        display: block;
+        width: 100%;
+        height:2px;
+        background-color: @black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transition: background 0.5s linear;
+    }
+    &-item:before,
+    &-item:after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: @black;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        transition: transform 0.5s linear;
+    }
+    &-item:before{
+        top: -8px;
+    }
+    &-item:after{
+        top: 8px;
+    } 
+}
+.header__nav.active{
+        display: block;
+        margin: 0;
+        padding: 0 0 10px 5px;
+    }
+#phone-mob{
+    display: none;
+}
+.phone-mob-numbers{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+    }
+@media screen and (max-width: 1300px)  {
+    .header__contacts{
+        width: 28%;
+    }
+    header__phone{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .page-header{
+        border-bottom: 1px solid @blue;
+    }
+    .header{
+        &__logo img{
+            height: 30px;
+            width: auto;
+        }
+        &__contacts, &__phone, &__btn, &__nav{
+            display: none;
+        }
+        &__top-mob, &__toggle{
+            display: block;
+        }
+        &__phone-mob{
+            margin-right: 50px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: center;
+            
+            img{
+                height: 20px;
+                width: auto;
+            }
+        }
+        &__nav ul{
+            flex-direction: column;
+        }
+    }
+    
+}

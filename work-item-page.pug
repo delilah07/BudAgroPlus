@@ -1,0 +1,109 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        
+        //Nomalize Link
+        link(rel="stylesheet", href="css/normalize.css")
+        
+        //Fancybox Link
+        link(rel="stylesheet", href="css/jquery.fancybox.min.css")
+        
+        //Slick Slider Link
+        link(rel="stylesheet", href="css/slick.css")
+        
+        //Style CSS Link
+        link(rel="stylesheet", href="css/style.css")
+        title БудАгроПлюс
+    body
+        include modules/header
+        
+        .breadcrumb
+            .container
+                ul
+                    li(class="main")
+                        a(href="#") 
+                            span Головна
+                    li
+                        a(href="#")
+                            span Роботи
+                    li
+                        span Сушарка зернова модульна
+                        
+        main
+            section.work-item-page
+                .container
+                    .work-item__wrapper
+                        .work-item__content
+                            h4.work-item__title Сушарка зернова модульна
+                            .work-item__characteristics
+                                table
+                                    tr
+                                        td.work-item__characteristics-title
+                                            p Завдання
+                                        td.work-item__cheracteristics-info
+                                    tr
+                                        td.work-item__characteristics-title
+                                            p Містоположення 
+                                        td.work-item__cheracteristics-info
+                                    tr
+                                        td.work-item__characteristics-title
+                                            p Термін
+                                        td.work-item__cheracteristics-info
+                                    tr
+                                        td.work-item__characteristics-title
+                                            p Види виконаних робіт
+                                        td.work-item__cheracteristics-info
+                                    tr
+                                        td.work-item__characteristics-title
+                                            p Перелік  модулів комплексу
+                                        td.work-item__cheracteristics-info
+                                    tr
+                                        td.work-item__characteristics-title
+                                            p Теплогенератор біопаливний ГПУ
+                                        td.work-item__cheracteristics-info
+                                .work-item__media-mob
+                                    video(width='100%', height='auto', controls)
+                                        source(src='/video/movie.mp4', type='video/mp4')
+                                        source(src='/video/movie.ogg', type='video/ogg')
+                            section.work-item__info
+                                .work-item__info-header
+                                    img(src="img/icons/customer-support.png")
+                                    h5 Про послугу
+                                .work-item__info-text Первинна підготовка врожаю зернових культур є невід’ємним процесом у виробництвіякісних продуктів сільського госпадарства. Від очистки та підготовки зерна багатов чому залежать тривалість зберігання та якісні показники товару.
+                                    br
+                                    | Зерноочистні комплекси (ЗАВ) призначені для попередньої, первинної очистки такалібрування насіння зернових і зернобобових культур (ячменю, пшениці, жита, гречки, кукурудзи, проса, гороху, соняшнику, ріпаку,сої) від різного роду домішок,лушпиння, насіння зернових і зернобобових культур від різного роду домішок,лущпиння, насіння бур’янів відразу після збирання врожаю на механізованих зерноочистних лініях зернопереробних підприємств. Комплекси зерноочистні (КЗС) виробляють комплексну підготовку (очистку та сушку) різних видів зернових для подальшої його переробки,зберігання на складах або силосних сховищах.
+                                    br
+                                    |Компанія  «Будагроплюс» надає повний перелік послуг з будівництва ЗАВів і КЗС під «ключ». Сюди входить проектування комплексів будівельні роботи, монтаж будівельних конструкцій, автоматизація роботи, проведення пуско-налагоджувальних робіт, введення об’єкта в експлуатацію, навчання обслуговуючого персоналу.
+                                    br
+                                    |Застосування нових технологій очистки зерна при будівництві зенроочистних комплексів істотно покращує показники якості обробки зерна, при цьому значно знижується енерговитрати на одиницю продукції
+                        .work-item__media
+                            video(width='100%', height='auto', controls)
+                                source(src='/video/movie.mp4', type='video/mp4')
+                                source(src='/video/movie.ogg', type='video/ogg')
+                            .work-item__slider
+                                .work-item__slider-inner
+                                    img(src="img/images-jpg/suhka modulna 1.jpg")
+                                    img(src="img/images-jpg/suhka mod2.jpg")
+                                    img(src="img/images-jpg/suhka modulna 2.jpg")
+                    
+        
+        include modules/reviews
+        include modules/consultation
+        include modules/services-slide
+        include modules/clients
+        include modules/footer
+    
+        //jQuery Script
+        script(src="https://code.jquery.com/jquery-3.4.1.js")
+     
+        //Fancybox Script
+        script(src="js/jquery.fancybox.min.js")
+
+        //Slick Slider Script
+        script(src="js/slick.js")
+        
+        //Main Script
+        script(src="js/main.js")

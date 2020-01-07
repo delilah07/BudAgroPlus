@@ -1,0 +1,123 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        
+        //Nomalize Link
+        link(rel="stylesheet", href="css/normalize.css")
+        
+        //Fancybox Link
+        link(rel="stylesheet", href="css/jquery.fancybox.min.css")
+        
+        //Slick Slider Link
+        link(rel="stylesheet", href="css/slick.css")
+        
+        //Style CSS Link
+        link(rel="stylesheet", href="css/style.css")
+        title БудАгроПлюс
+    body
+        include modules/header
+        
+        .breadcrumb
+            .container
+                ul
+                    li.main
+                        a(href="#") 
+                            span Головна
+                    li
+                        span Відгуки
+        
+        main
+            section.reviews-page
+                .container  
+                    h4.reviews-page__title Відгуки
+                    .reviews-page__wrapper
+                        .reviews-page__item
+                            img(src="img/images-jpg/2015602163335.jpg")
+                            .reviews-page__item-title Теплогенератор біопаливний ГТУ
+                            .reviews-page__item-text Дякуємо за роботу. Дуже зручна конструкція. 
+                                br
+                                | Якісно та оперативно  спрацювали. 
+                                br
+                                | Ціна доступна. Рекомендую
+                            .reviews-page__item-author Андрій Романович,м.Вінниця
+                            
+                        .reviews-page__item
+                            img(src="img/images-jpg/foto0831.jpg")
+                            .reviews-page__item-title Проектування та монтаж елеватору
+                            .reviews-page__item-text Оперативно, якісно, економно. СФГ "ЛЮБА"
+                            .reviews-page__item-author Олена,м.Миколаїв
+                            
+                        .reviews-page__item
+                            img(src="img/reviews/Без названия.jpg" class="h-100")
+                            
+                        .reviews-page__item
+                            img(src="img/reviews/list-podyka_KievAtlantik.jpg" class="h-100")
+                            
+                        .reviews-page__item
+                            img(src="img/images-jpg/20151007165446.jpg")
+                            .reviews-page__item-title Проектування та монтаж елеватору
+                            .reviews-page__item-text Оперативно, якісно, економно. СФГ "ЛЮБА"
+                            .reviews-page__item-author Олена,м.Миколаїв
+                            
+                        .reviews-page__item
+                            img(src="img/images-jpg/DSC03544.jpg")
+                            .reviews-page__item-title Теплогенератор біопаливний ГТУ
+                            .reviews-page__item-text Дякуємо за роботу. Дуже зручна конструкція. 
+                                br
+                                | Якісно та оперативно  спрацювали. 
+                                br
+                                | Ціна доступна. Рекомендую
+                            .reviews-page__item-author Андрій Романович,м.Вінниця
+                        
+                        .reviews-page__item
+                            img(src="img/images-jpg/0041.jpg")
+                            .reviews-page__item-title Теплогенератор біопаливний ГТУ
+                            .reviews-page__item-text Дякуємо за роботу. Дуже зручна конструкція. 
+                                br
+                                | Якісно та оперативно  спрацювали. 
+                                br
+                                | Ціна доступна. Рекомендую
+                            .reviews-page__item-author Андрій Романович,м.Вінниця
+                        
+                        .reviews-page__item
+                            img(src="img/images-jpg/2015616110551.jpg")
+                            .reviews-page__item-title Проектування та монтаж елеватору
+                            .reviews-page__item-text Оперативно, якісно, економно. СФГ "ЛЮБА"
+                            .reviews-page__item-author Олена,м.Миколаїв
+                        
+                        .reviews-page__item
+                            img(src="img/reviews/list-podyka_KievAtlantik.jpg" class="h-100")
+                        
+                        
+                        
+                        .pagination
+                                a.pagination__left-btn
+                                    img(src="img/icons/arrow-left-long.png")
+                                a.pagination__item 1
+                                a.pagination__item 2
+                                a.pagination__item.active 3
+                                a.pagination__item 4
+                                a.pagination__item 5
+                                a.pagination__item 6
+                                a.pagination__item 7
+                                a.pagination__right-btn
+                                    img(src="img/icons/arrow-right-long.png")
+        
+        
+        include modules/clients        
+        include modules/footer
+    
+        //jQuery Script
+        script(src="https://code.jquery.com/jquery-3.4.1.js")
+     
+        //Fancybox Script
+        script(src="js/jquery.fancybox.min.js")
+
+        //Slick Slider Script
+        script(src="js/slick.js")
+        
+        //Main Script
+        script(src="js/main.js")

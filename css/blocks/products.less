@@ -1,0 +1,102 @@
+// main: ../style.less
+
+.products{
+    &__content{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+    &__accordion-list{
+        width: 45%;
+    }
+    &__accordion{
+        
+        &-header{
+            font-size: 22px;
+            line-height: 24px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 24px;
+            cursor: pointer;
+            position: relative;
+            width: auto;
+            display: inline-block;
+            
+            &::after{
+                content: "";
+                position: absolute;
+                top: 7px;
+                right: -35px;
+                width: 20px;
+                height: 10px;
+                background: url("../img/icons/arrow-down.png") center no-repeat;
+                background-size: cover;
+            }
+        }
+        &-body{
+            display: none;
+        }
+        &-link{
+            line-height: 24px;
+            margin-bottom: 24px;
+            
+            a{
+                border-bottom: 2px solid transparent;
+                transition: all .5s;
+            }
+            
+            &:hover a{
+                border-bottom: 2px solid @blue;
+            }
+        }
+        
+    }
+    &__title{
+        font-weight: 600;
+    }
+    &__photo{
+        width: 55%;
+        
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .products{
+        margin-top: 50px;
+        
+        &__accordion-list{
+            width: 100%;
+        }
+        &__accordion-header{
+            font-size:16px;
+            line-height: 24px;
+            margin-top: 25px;
+            margin-bottom: 0;
+            
+            &::after{
+                width: 16px;
+                height: 8px;
+                background-size: contain;
+                right: -25px;
+            }
+        }
+        &__accordion-link{
+            font-size:13px;
+            line-height: 24px;
+            margin: 20px 0;
+            
+            &:hover a{
+                color:@blue;
+            }
+        }
+        &__photo{
+            display: none;
+        }
+    }
+}

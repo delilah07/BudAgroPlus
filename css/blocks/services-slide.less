@@ -1,0 +1,95 @@
+// main: ../style.less
+
+// Section Services
+.services-slide{
+    
+    &__header{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid @blue;
+        align-items: flex-end;
+        
+        &-title{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: center;
+            
+            img{
+                width: 40px;
+                height: 40px;
+                margin-right: 15px;
+            }
+        }
+    }
+    &__items{
+        margin-top: 40px;
+    }
+    &__item{
+        position: relative;
+        margin-bottom: 22px;
+        width: 100%;
+        height: 100%;
+        
+        &-wrapper{
+            padding: 0 20px;
+            width: 100%;
+            height: 100%;
+        }
+        
+        
+        &-img {
+            height: 300px;
+            overflow: hidden;
+        
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-info{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(30, 92,150, .7);
+            width: 100%;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: center;
+            min-height: 80px;
+            align-items: center;
+        }
+        &-text{
+            width: 75%;
+            color: @white;
+            text-align: center;
+            padding: 15px 0;
+            font-weight: 600;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services{
+        margin-top: 45px;
+        
+        &__header{
+            &-title img{
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

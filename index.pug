@@ -1,0 +1,150 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        
+        //Nomalize Link
+        link(rel="stylesheet", href="css/normalize.css")
+        
+        //Fancybox Link
+        link(rel="stylesheet", href="css/jquery.fancybox.min.css")
+        
+        //Slick Slider Link
+        link(rel="stylesheet", href="css/slick.css")
+        
+        //Style CSS Link
+        link(rel="stylesheet", href="css/style.css")
+        title БудАгроПлюс
+    body
+        include modules/header
+        main
+            section.intro
+                .container
+                    h2 Ремонт, монтаж, будівництво та обслуговування підприємств АПК України та країн СНД
+            div.statistics
+                .container
+                    .statistics__items
+                        .statistics__item
+                            .statistics__item-img
+                                img(src="img/icons/silo.png")
+                            .statistics__item-number 246
+                            .statistics__item-info
+                                | ВИКОНАНИХ 
+                                br
+                                | ПРОЕКТІВ
+                        .statistics__item
+                            .statistics__item-img
+                                img(src="img/icons/factory.png")
+                            .statistics__item-number 50
+                            .statistics__item-info
+                                | ВИРОБНИКІВ 
+                                br
+                                | ОБЛАДНАННЯ
+                        .statistics__item
+                            .statistics__item-img
+                                img(src="img/icons/clock.png")
+                            .statistics__item-number 23
+                            .statistics__item-info
+                                | РОКИ НА РИНКУ 
+                                br
+                                | БУДІВНИЦТВА
+                        .statistics__item
+                            .statistics__item-img
+                                img(src="img/icons/maintenance.png")
+                            .statistics__item-number до 3
+                            .statistics__item-info
+                                | РОКІВ ТЕХНІЧНА 
+                                br
+                                | ПІДТРИМКА ТА ГАРАНТІЯ 
+            section.services
+                .container
+                    .services__header
+                        .services__header-title
+                            img(src="img/icons/service.png")
+                            h3 Послуги
+                        a(href="#" class="services__header-link") Всі послуги
+                    .services__items
+                        a(href="#" class="services__item")
+                            .services__item-img
+                                img(src="img/images-jpg/DSC03544.jpg")
+                            .services__item-info 
+                                .services__item-text Реконструкція та ремонт ЗАВ та КЗС
+                        a(href="#" class="services__item")
+                            .services__item-img
+                                img(src="img/images-jpg/foto0572.jpg")
+                            .services__item-info 
+                                .services__item-text Монтаж зернопереробного обладнання
+                        a(href="#" class="services__item")
+                            .services__item-img
+                                img(src="img/images-jpg/foto0767.jpg")
+                            .services__item-info 
+                                .services__item-text Проектування та монтаж елеваторів
+                        a(href="#" class="services__item")
+                            .services__item-img
+                                img(src="img/images-jpg/DSC00932.jpg")
+                            .services__item-info 
+                                .services__item-text Будівництво ЗАВів та КЗС під ключ
+                        a(href="#" class="services__item")
+                            .services__item-img
+                                img(src="img/images-jpg/7165.jpg")
+                            .services__item-info 
+                                .services__item-text Проектування та монтаж ліній якості
+                        a(href="#" class="services__item")
+                            .services__item-img
+                                img(src="img/images-jpg/bcs002.jpg")
+                            .services__item-info 
+                                .services__item-text Капітальний та поточний ремонт зерносепараторів
+                        a(href="#" class="services__item big-item")
+                            .services__item-img
+                                img(src="img/images-jpg/2015901150655.jpg")
+                            .services__item-info 
+                                .services__item-text Переобладнання сушарок зернових
+                        a(href="#" class="services__mob-link") Переглянути всі
+
+            section.products-slider
+                .container
+                    .products-slider__inner
+                        .products-slider__item
+                            .products-slider__item-photo
+                                img(src="img/images-jpg/2015901120108.jpg")
+                            .products-slider__item-info
+                                .products-slider__item-content
+                                    h4 
+                                        | Повітряний 
+                                        br
+                                        | теплообмінник ТВ
+                                    p Теплообмінник є проміжним обладнанням між теплогенератором, котрий працює на біопаливі та вентилятором, який застосовується в технологічній схемі обладнання.
+                                    a(class="products-slider__btn default__btn") Детальніше
+                        .products-slider__item
+                            .products-slider__item-photo
+                                img(src="img/images-jpg/2015901120108.jpg")
+                            .products-slider__item-info
+                                .products-slider__item-content
+                                    h4 
+                                        | Повітряний 
+                                        br
+                                        | теплообмінник ТВ
+                                    p Теплообмінник є проміжним обладнанням між теплогенератором, котрий працює на біопаливі та вентилятором, який застосовується в технологічній схемі обладнання.
+                                    a(class="main-slider__btn default__btn") Детальніше
+
+            include modules/consultation
+            include modules/products
+            include modules/clients
+            include modules/about-us
+            include modules/reviews
+        include modules/footer
+    
+        //jQuery Script
+        script(src="https://code.jquery.com/jquery-3.4.1.js")
+     
+        //Fancybox Script
+        script(src="js/jquery.fancybox.min.js")
+
+        //Slick Slider Script
+        script(src="js/slick.js")
+        
+        //Main Script
+        script(src="js/main.js")
+    

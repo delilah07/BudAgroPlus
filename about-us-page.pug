@@ -1,0 +1,103 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        
+        //Nomalize Link
+        link(rel="stylesheet", href="css/normalize.css")
+        
+        //Fancybox Link
+        link(rel="stylesheet", href="css/jquery.fancybox.min.css")
+        
+        //Slick Slider Link
+        link(rel="stylesheet", href="css/slick.css")
+        
+        //Style CSS Link
+        link(rel="stylesheet", href="css/style.css")
+        title БудАгроПлюс
+    body
+        include modules/header
+        
+        .breadcrumb
+            .container
+                ul
+                    li.main
+                        a(href="#") 
+                            span Головна
+                    li
+                        span Про компанію
+        
+        main
+            section.about-page
+                .container
+                    .about-page__wrapper
+                        .about-page__info
+                            h4.about-page__title Будагроплюс
+                            p.about-page__text Високий професіоналізм і досвід дозволяють нам якісно виконати замовлення, починаючи з технічного обґрунтуванн'я будівництва об'єкта, закінчуючи навчанням обслуговуючого персоналу. 
+                                br
+                                | Звертаючись до нашої фірми «Будагроплюс» Ви отримаєте повний спектр послуг від геологічної розвідки та проектування до монтажу та вводу в експлуатацію обладнання будь-якого із вподобаного вами виробників зернопереробного обладнання. 
+                                br
+                                | Цінова політика компанії та професіоналізм наших фахівців дають можливість замовнику максимально ефективно витрачати кошти на розвиток свого підприємства.
+                        .about-page__photo
+                            img(src="img/images-jpg/grain-elevator-426685_1920.jpg")
+                
+                .statistics
+                    .container
+                        .statistics__items
+                            .statistics__item
+                                .statistics__item-img
+                                    img(src="img/icons/silo.png")
+                                .statistics__item-number 246
+                                .statistics__item-info
+                                    | ВИКОНАНИХ 
+                                    br
+                                    | ПРОЕКТІВ
+                            .statistics__item
+                                .statistics__item-img
+                                    img(src="img/icons/factory.png")
+                                .statistics__item-number 50
+                                .statistics__item-info
+                                    | ВИРОБНИКІВ 
+                                    br
+                                    | ОБЛАДНАННЯ
+                            .statistics__item
+                                .statistics__item-img
+                                    img(src="img/icons/clock.png")
+                                .statistics__item-number 23
+                                .statistics__item-info
+                                    | РОКИ НА РИНКУ 
+                                    br
+                                    | БУДІВНИЦТВА
+                            .statistics__item
+                                .statistics__item-img
+                                    img(src="img/icons/maintenance.png")
+                                .statistics__item-number до 3
+                                .statistics__item-info
+                                    | РОКІВ ТЕХНІЧНА 
+                                    br
+                                    | ПІДТРИМКА ТА ГАРАНТІЯ 
+                
+                section.about-page__projects
+                    .container
+                        h4.about-page__projects-title Наші виконанні роботи
+                    .about-page__projects-map
+                        img(src="img/Maps/Maps 1920.jpg")
+                             
+        
+        include modules/clients 
+        include modules/awards
+        include modules/footer
+    
+        //jQuery Script
+        script(src="https://code.jquery.com/jquery-3.4.1.js")
+     
+        //Fancybox Script
+        script(src="js/jquery.fancybox.min.js")
+
+        //Slick Slider Script
+        script(src="js/slick.js")
+        
+        //Main Script
+        script(src="js/main.js")

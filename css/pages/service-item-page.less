@@ -1,0 +1,165 @@
+// main: ../style.less
+
+.service-item{
+    &__wrapper .container{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        &.last .service-item__wrapper{
+            margin-bottom: 0;
+        }
+    }
+    &__content{
+        width: 48%;
+        position: relative;
+        margin-bottom: 65px;
+    }
+    &__number{
+        position: absolute;
+        font-size: 200px;
+        color: rgba(30, 92, 150, .1);
+        
+        &.number-one{
+            top:50%;
+            left: -80px;
+            transform: translateY(-50%);
+        }  
+        &.number-two{
+            top:0px;
+            right: 0;
+        }
+        &.number-three{
+            top:50%;
+            left: -110px;
+            transform: translateY(-50%);
+        } 
+        &.number-four{
+            top:50%;
+            right: 0;
+            transform: translateY(-50%);
+        } 
+    }
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__photo{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__btn{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: -40px;
+    }
+    &__list {
+        margin-top: 30px;
+        
+        li{
+            padding-left: 30px;
+            margin-bottom: 15px;
+            position: relative;
+
+            &::before{
+                content:'';
+                position: absolute;
+                top:10px;
+                left: 10px;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: @blue;
+            }
+        }
+    }
+    &__mob-photo{
+        display: none;
+    }
+}
+h5.service-item__title{
+    margin-top: 30px;   
+} 
+.learning{
+    background: url("../img/images-jpg/14082.jpg") top center no-repeat;
+    height: 325px;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 60px 0;
+    padding: 80px 0;
+    color:@white;
+    
+    &__content{
+        width: 48%;
+    }
+    &__text{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-item{
+        margin-top: 30px;
+        
+        &__content{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &__title{
+            margin-bottom: 20px;
+        }
+        &__mob-photo{
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        &__number{
+            font-size: 100px;
+
+            &.number-one{
+                top:30px;
+                left: 85%;
+            }  
+            &.number-two{
+                top:50px;
+                right: 0;
+            }
+            &.number-three{
+                top:50px;
+                left: 80%;
+            } 
+            &.number-four{
+                top:0;
+                right: 0;
+                transform: translateY(100%);
+            } 
+        }
+        
+        &__btn{
+            margin-top: 0px;
+        }
+    }
+    .tablet-photo{
+        display: none;
+    }
+    h5.service-item__title {
+        margin-top: 0;
+    }
+    .learning{
+        margin: 50px 0;
+        
+        &__content{
+            width: 100%;
+        }
+        &__text{
+            font-size: 16px;
+        }
+    }
+}

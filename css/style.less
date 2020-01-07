@@ -1,0 +1,296 @@
+// compress: false
+
+@import "vars";
+
+html{
+    font-size: 20px;
+    
+}
+
+body{
+    margin: 0;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 20px;
+    color: @black;
+    line-height: 26px;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, p, p + p{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+    
+}
+h2{
+    font-size: 52px;
+    line-height: 60px;
+}
+h3{
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: 400;
+}
+ h4{
+    font-size: 38px;
+    line-height: 42px
+}
+h5{
+    font-size: 28px;
+    line-height: 30px 
+}
+h6{
+    font-size: 18px;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: @black;
+}
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    margin-top: 100px;
+}
+//Button
+.default__btn{
+    font-size: 18px;
+    line-height: 30px;
+    color: @white;
+    background-color: @blue;
+    padding: 15px 30px;
+    text-align: center;
+    min-width: 175px 
+}
+
+//Slider
+.slick-btn{
+    position: absolute;
+    bottom:50%;
+
+    z-index: 10;
+    width: 28px;
+    height: 52px;
+    background: transparent;
+    border:none;
+    cursor: pointer;
+}
+.slick-prev{
+    left: -66px;
+}
+.slick-prev::before{
+    content:  url(../img/icons/arrow-left.png);
+    
+}
+.slick-next{
+    right: -46px;
+}
+.slick-next::before{
+   content: url(../img/icons/arrow-right.png);
+}
+
+//Breadcrumb
+.breadcrumb{
+    margin-top: 25px;
+    
+    ul{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+    
+    li{
+        font-size: 18px
+    }
+}
+.breadcrumb li{
+    padding-left: 25px;
+    position: relative;
+    
+    
+    &::before{
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 3px;
+        width: 12px;
+        height: 12px;
+        border: 1px solid @black;
+        border-left:0;
+        border-top:0;
+        transform:rotate(-45deg);
+    }
+    &.main{
+        padding-left: 0;
+        
+        &::before{
+            display: none;
+        }
+    }
+}
+
+//Pagination
+.pagination{
+    margin-top: 100px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    font-size:20px;
+
+    align-items: center;
+
+    &__item{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color:@blue;
+        margin: 0 10px;
+       display: -webkit-flex;
+       display: -moz-flex;
+       display: -ms-flex;
+       display: -o-flex;
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        &.active{
+            background: @blue;
+            color:@white;
+        }
+    }
+    &__left-btn{
+        margin-right: 10px;
+    }
+    &__right-btn{
+        margin-left: 10px;
+    }
+}
+
+
+// Blocks
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/statistics";
+@import "blocks/services";
+@import "blocks/products-slider"; 
+@import "blocks/consultation";
+@import "blocks/products";
+@import "blocks/clients";
+@import "blocks/about-us";
+@import "blocks/reviews";
+@import "blocks/services-slide";
+@import "blocks/awards";
+@import "blocks/footer";
+
+//Pages
+@import "pages/services-page";
+@import "pages/service-item-page";
+@import "pages/works-page";
+@import "pages/work-item-page";
+@import "pages/products-page";
+@import "pages/product-item-page";
+@import "pages/reviews-page";
+@import "pages/contacts-page";
+@import "pages/about-us-page";
+
+
+@media screen and (max-width: 768px) {
+    h2{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    h3{
+        font-size: 20px;
+        line-height: 25px;
+    }
+     h4{
+        font-size: 20px;
+        line-height: 30px
+    }
+    h5{
+        font-size: 16px;
+        line-height: 16px
+    }
+    h5{
+        font-size: 16px;
+        line-height: 24px
+    }
+    section{
+        margin-top: 57px;
+    }
+    
+    .slick-btn{
+        bottom: -76px;   
+    }
+    .slick-prev{
+        left: 50%;
+        transform: translate(-125%, -50%);
+    }
+    
+    .slick-prev::before, .slick-next::before{
+        width: 9px;
+        height: 16px;
+    }
+    .slick-prev::before{
+        content:  url(../img/icons/arrow-left-sm.png);
+
+    }
+    .slick-next{
+        right: 50%;
+        transform: translate(125%, -50%);
+    }
+    .slick-next::before{
+       content: url(../img/icons/arrow-right-sm.png);
+    }
+    .slick-dots{
+        position: relative;
+        
+        li{
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size:16px;
+            display: none;
+            
+            &::first-letter{
+                color: @blue;
+            }
+            &.slick-active{
+                display: block;
+            }
+        }
+    }
+    .pagination{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+        &__item{
+            margin: 0 5px;
+
+            &:nth-child(2), 
+            &:nth-child(6), 
+            &:nth-child(7),
+            &:nth-child(8){
+                display: none;
+            }
+        }
+    }
+   
+}

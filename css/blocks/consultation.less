@@ -1,0 +1,92 @@
+// main: ../style.less
+
+.consultation{
+    background: url("../img/images-jpg/ohio-1937447_19201.jpg") center no-repeat;
+    height: 260px;
+    background-attachment: fixed;
+    background-size: cover;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    
+    &__content{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        h4{
+            color:@white;
+            font-weight: 600;
+        }
+        
+        form{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            align-items: flex-end;
+            
+            input{
+                border:none;
+                
+                &[type=text], &[type=tel]{
+                    line-height: 42px;
+                    background-color: transparent;
+                    color: @white;
+                    border-bottom:1px solid @yellow;
+                    padding: 0;
+                    padding-left: 20px;
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .consultation{
+        height: 385px;
+        margin-top: 80px;
+        
+        &__content{
+            
+            h4{
+                text-align: center;
+                font-size: 18px;
+                line-height: 28px;
+                margin: 0 30px;
+            }
+            
+            form{
+                flex-direction: column;
+                align-items: center;
+                margin-top: 0;
+                width: 100%;
+                
+                input{
+                    margin-top: 40px;
+                    font-size: 16px;
+                    
+                    &[type=submit]{
+                        margin-top: 25px;
+                    }
+                    &[type=text], &[type=tel]{
+                        line-height: 18px;
+                        padding-left: 0;
+                       width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

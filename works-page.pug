@@ -1,0 +1,98 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        
+        //Nomalize Link
+        link(rel="stylesheet", href="css/normalize.css")
+        
+        //Fancybox Link
+        link(rel="stylesheet", href="css/jquery.fancybox.min.css")
+        
+        //Slick Slider Link
+        link(rel="stylesheet", href="css/slick.css")
+        
+        //Style CSS Link
+        link(rel="stylesheet", href="css/style.css")
+        title БудАгроПлюс
+    body
+        include modules/header
+        
+        .breadcrumb
+            .container
+                ul
+                    li.main
+                        a(href="#") 
+                            span Головна
+                    li
+                        span Роботи
+        
+        main
+            section.works-page
+                .container  
+                    h4.works-page__title Роботи
+                    a(data-fancybox data-src="#consultation" href="javascript:;" class="works-page__btn default__btn") Замовити консультацію
+                    .works-page__wrapper
+                        .works-page__category
+                            h6.works-page__category-title Оберіть категорію:
+                            a(href="#" class="works-page__category-btn default__btn") Монтаж зерноперебного обладнання
+                        .works-page__items
+                            a(href="../app/work-item-page.html" class="works-page__item")
+                                .works-page__item-img
+                                    img(src="img/images-jpg/2014926082356.jpg")
+                                .works-page__item-info 
+                                    .works-page__item-date 12 червня 2019 р.
+                                    .works-page__item-text 1 варіант
+                            a(href="#" class="works-page__item")
+                                .works-page__item-img
+                                    img(src="img/images-jpg/foto0592.jpg")
+                                .works-page__item-info 
+                                    .works-page__item-date 13 липня 2019 р.
+                                    .works-page__item-text 2 варіант
+                            a(href="#" class="works-page__item")
+                                .works-page__item-img
+                                    img(src="img/images-jpg/foto0572.jpg")
+                                .works-page__item-info 
+                                    .works-page__item-date 5 серпня 2019 р.
+                                    .works-page__item-text 3 варіант
+                            
+                            a(href="#" class="works-page__item")
+                                .works-page__item-img
+                                    img(src="img/images-jpg/DSC01450.jpg")
+                                .works-page__item-info 
+                                    .works-page__item-date 29 серпня 2019 р.
+                                    .works-page__item-text 4 варіант
+                            
+
+                        .pagination
+                            a.pagination__left-btn
+                                img(src="img/icons/arrow-left-long.png")
+                            a.pagination__item 1
+                            a.pagination__item 2
+                            a.pagination__item.active 3
+                            a.pagination__item 4
+                            a.pagination__item 5
+                            a.pagination__item 6
+                            a.pagination__item 7
+                            a.pagination__right-btn
+                                img(src="img/icons/arrow-right-long.png")
+                        a(data-fancybox data-src="#consultation" href="javascript:;" class="works-page__btn-mob default__btn") Замовити консультацію
+        
+        
+        include modules/clients            
+        include modules/footer
+    
+        //jQuery Script
+        script(src="https://code.jquery.com/jquery-3.4.1.js")
+     
+        //Fancybox Script
+        script(src="js/jquery.fancybox.min.js")
+
+        //Slick Slider Script
+        script(src="js/slick.js")
+        
+        //Main Script
+        script(src="js/main.js")
+        

@@ -1,0 +1,170 @@
+// main: ../style.less
+
+.work-item{
+    &__wrapper{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__content{
+        width: 49%;
+    }
+    &__characteristics{
+        margin-top: 10px;
+        line-height: 20px;
+        
+        tr{
+            height: 60px;
+        }
+        &-title{
+            vertical-align: bottom;
+            & p{
+                border-bottom: 1px solid transparent;
+                display: inline-block;
+            }
+            &:hover p{
+                border-bottom: 1px solid @blue;
+            }
+        }
+    }
+    &__media{
+        width: 50%;
+        
+        &-mob{
+            display: none;
+        }
+    }
+    &__info{
+        margin-top: 65px;
+        
+        &-header{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+
+            h5 {
+                border-bottom: 1px solid @blue-light;
+                padding-bottom: 2px;
+            }
+
+            img{
+                width: 40px;
+                height: 40px;
+                margin-right: 20px;
+            }  
+        }
+        &-text{
+            margin-top: 35px;
+            line-height: 30px;
+        }
+    }
+   &__slider-inner{ 
+       margin-top: 40px;
+       
+       .slick-btn{
+            bottom:-75px;
+            z-index: 10;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border:1px solid @gray;
+            border-radius: 50%;
+            cursor: pointer;
+           
+        }
+        .slick-prev{
+            left: 50%;
+            transform: translateX(-150%);
+        }
+        .slick-prev::before{
+            content:  url(../img/icons/arrow-left-sm.png);
+            right: 2px;
+            position: relative;
+
+        }
+        .slick-next{
+            right: 50%;
+            transform: translateX(150%);
+        }
+        .slick-next::before{
+           content: url(../img/icons/arrow-right-sm.png);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .work-item{
+        margin-top: 30px;
+        
+        &__content, &__media{
+            width: 100%;
+        }
+        &__characteristics {
+            margin-top: 0;
+            
+            &-title{
+                font-size: 16px;
+            }
+        }
+        &__media{
+            video{
+                display: none;
+            }
+            &-mob{
+                display: block;
+                margin-top: 25px;
+            }
+        }
+        &__info {
+            margin-top: 30px;
+            
+            &-header{
+                border-bottom: 1px solid @blue-light;
+                display: inline-block;
+            
+                h5 {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                    line-height: 20px;
+                    display: inline-block;
+                }
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 15px;
+                    display: inline-block;
+                }  
+            }
+            &-text{
+                margin-top: 30px;
+                font-size: 16px;
+            }
+        }
+        &__slider-inner{ 
+           margin-top: 50px;
+
+           .slick-btn{
+                bottom:-45px;
+               border:none;
+                border-radius: none;
+            }
+            .slick-prev{
+                left: 50%;
+                transform: translateX(-100%);
+            }
+            .slick-next{
+                right: 50%;
+                transform: translateX(100%);
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,154 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        
+        //Nomalize Link
+        link(rel="stylesheet", href="css/normalize.css")
+        
+        //Fancybox Link
+        link(rel="stylesheet", href="css/jquery.fancybox.min.css")
+        
+        //Slick Slider Link
+        link(rel="stylesheet", href="css/slick.css")
+        
+        //Style CSS Link
+        link(rel="stylesheet", href="css/style.css")
+        title БудАгроПлюс
+    body
+        include modules/header
+        
+        .breadcrumb
+            .container
+                ul
+                    li(class="main")
+                        a(href="#") 
+                            span Головна
+                    li
+                        span Послуги
+        
+        main
+            section.service-page
+                .container  
+                    h4.services-page__title Послуги
+                    .services-page__wrapper
+
+                        aside.services-page__nav
+                            ul(class="services-page__accordion" data-accordion="open")
+                            li
+                                .services-page__accordion-header Проектування та монтаж
+                                .services-page__accordion-body
+                                    ul
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                            li
+                                .services-page__accordion-header Монтаж
+                                .services-page__accordion-body
+                                    ul
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123
+                            li
+                                .services-page__accordion-header Будівництво
+                                .services-page__accordion-body
+                                    ul
+                                        li.services-page__accordion-link 
+                                            a(href="#") Будівництво завальних ям
+                                        li.services-page__accordion-link 
+                                            a(href="../app/service-item-page.html") Будівництво ЗАВів та КЗС під ключ
+                                        li.services-page__accordion-link 
+                                            a(href="#") Будівництво зерносховищ
+                            li
+                                .services-page__accordion-header Капітальний та поточний ремонт зерносепараторів
+                                .services-page__accordion-body
+                                    ul
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                            li
+                                .services-page__accordion-header Виробництво нестандартного обладнння
+                                .services-page__accordion-body
+                                    ul
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                            li
+                                .services-page__accordion-header Переобладнання сушарок зернових
+                                .services-page__accordion-body
+                                    ul
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                            li
+                                .services-page__accordion-header Реконструкція та ремонт ЗАВ та КЗС
+                                .services-page__accordion-body
+                                    ul
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+                                        li.services-page__accordion-link 
+                                            a(href="#") 123 
+
+
+                        .services-page__main
+                            .services-page__category
+                                h5.services-page__category-title Виберіть категорію:
+                                a(href="#" class="services-page__btn default__btn") Всі послуги
+                            h5.services-page__main-title Проектування та монтаж
+                            .services-page__gallary
+                                a(href="#" class="services-page__item")
+                                    .services-page__item-img
+                                        img(src="img/images-jpg/foto0592.jpg")
+                                    .services-page__item-info 
+                                        .services-page__item-text Монтаж зернопереробного обладнання
+                                a(href="#" class="services-page__item")
+                                    .services-page__item-img
+                                        img(src="img/images-jpg/20141208130246.jpg")
+                                    .services-page__item-info 
+                                        .services-page__item-text Монтаж зернових сушарок
+                                a(href="#" class="services-page__item")
+                                    .services-page__item-img
+                                        img(src="img/images-jpg/7165.jpg")
+                                    .services-page__item-info 
+                                        .services-page__item-text Проектування та монтаж лінії якості
+                                a(href="#" class="services-page__item")
+                                    .services-page__item-img
+                                        img(src="img/images-jpg/foto0767.jpg")
+                                    .services-page__item-info 
+                                        .services-page__item-text Проектування та монтаж елеваторів
+
+
+
+        include modules/clients
+        include modules/footer
+    
+        //jQuery Script
+        script(src="https://code.jquery.com/jquery-3.4.1.js")
+     
+        //Fancybox Script
+        script(src="js/jquery.fancybox.min.js")
+
+        //Slick Slider Script
+        script(src="js/slick.js")
+        
+        //Main Script
+        script(src="js/main.js")

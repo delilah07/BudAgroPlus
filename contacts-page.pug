@@ -1,0 +1,90 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        
+        //Nomalize Link
+        link(rel="stylesheet", href="css/normalize.css")
+        
+        //Fancybox Link
+        link(rel="stylesheet", href="css/jquery.fancybox.min.css")
+        
+        //Slick Slider Link
+        link(rel="stylesheet", href="css/slick.css")
+        
+        //Style CSS Link
+        link(rel="stylesheet", href="css/style.css")
+        title БудАгроПлюс
+    body
+        include modules/header
+        
+        .breadcrumb
+            .container
+                ul
+                    li.main
+                        a(href="#") 
+                            span Головна
+                    li
+                        span Контакти
+        
+        main
+            section.contacts-page
+                .container  
+                    h4.contacts-page__title Контакти
+                    .contacts-page__wrapper
+                        .contacts-page__contact-info Ген.директор: 
+                            br
+                            |Колмиков Сергій Олександрович
+                            .contacts-page__contact-number Тел: +38(066) 542-53-79
+                                br
+                                | &nbsp; &nbsp; &nbsp; &nbsp; +38(067) 171-24-94
+                                br
+                                | &nbsp; &nbsp; &nbsp; &nbsp; +38(05446) 3-11-22
+                            .contacts-page__contact-hours Графік роботи: пн-вс з 9 до 21:00
+                            .contacts-page__contact-email E-mail: budagroplus@i.ua
+                            .contacts-page__contact-address 42700 Україна
+                                br
+                                | Сумська обл., м.Охтирка
+                                br
+                                | вул.Київська 66
+                        .contacts-page__consultation-form
+                            form
+                                .contacts-page__form-wrapper
+                                    .contacts-page__form-column.col-one
+                                        input(type="text" name="firm" value="Назва організації")
+                                        input(type="text" name="name" value="Ім’я")
+                                        input(type="tel" name="telnumber" value="Телефон")
+                                    .contacts-page__form-column.col-two
+                                        textarea Повідомлення
+                                input(type="submit" value="Замовити консультацію" class="default__btn")
+                    img(src="img/images-jpg/slider-img2.jpg")
+                .contacts-page__mob-form
+                            h4.contacts-page__form-title Замовити консультацію спеціаліста
+                            form
+                                .contacts-page__form-wrapper
+                                    .contacts-page__form-column.col-one
+                                        input(type="text" name="firm" value="Назва організації")
+                                        input(type="text" name="name" value="Ім’я")
+                                        input(type="tel" name="telnumber" value="Телефон")
+                                    .contacts-page__form-column.col-two
+                                        textarea Повідомлення
+                                input(type="submit" value="Відправити" class="default__btn")
+
+                        
+        
+        include modules/clients        
+        include modules/footer
+    
+        //jQuery Script
+        script(src="https://code.jquery.com/jquery-3.4.1.js")
+     
+        //Fancybox Script
+        script(src="js/jquery.fancybox.min.js")
+
+        //Slick Slider Script
+        script(src="js/slick.js")
+        
+        //Main Script
+        script(src="js/main.js")

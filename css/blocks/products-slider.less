@@ -1,0 +1,73 @@
+// main: ../style.less
+
+//Section Main Slider
+.products-slider{
+    margin-top: 66px;
+    &__item{
+        position: relative;
+        
+        &-photo {
+            height: 450px;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-info{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.3);
+            color: @white;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: center;
+        }
+        &-content{
+            position: relative;
+            left: 14%;
+            width: 40%;
+            
+            h4{
+                font-weight: 600;
+            }
+            p{
+                margin: 40px 0 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .products-slider{
+        margin-top: 55px;
+        
+        
+        &__item-photo{
+            height: 360px;
+        
+        }
+        &__item-content {
+            width: 100%;
+            left: 0;
+            padding: 0 20px;
+            p{
+                font-size: 16px;
+                margin: 15px 0;
+            }
+        }
+    }
+    .products-slider .container{
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+

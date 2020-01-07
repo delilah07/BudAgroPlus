@@ -1,0 +1,38 @@
+// main: ../style.less
+
+//Section Intro
+.intro{
+    background: url(../img/images-jpg/main.jpg) center no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+    
+    h2{
+        font-weight: 700;
+        color: @white;
+        position: relative;
+        left: 85px;
+        text-align: left;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        height: 280px;
+        margin-top: 0;
+        
+        h2 {
+            width: 100%;
+            left: 0;
+            font-weight: 700;
+        }
+    }
+   
+}

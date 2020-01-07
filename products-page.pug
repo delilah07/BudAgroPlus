@@ -1,0 +1,86 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        
+        //Nomalize Link
+        link(rel="stylesheet", href="css/normalize.css")
+        
+        //Fancybox Link
+        link(rel="stylesheet", href="css/jquery.fancybox.min.css")
+        
+        //Slick Slider Link
+        link(rel="stylesheet", href="css/slick.css")
+        
+        //Style CSS Link
+        link(rel="stylesheet", href="css/style.css")
+        title БудАгроПлюс
+    body
+        include modules/header
+        
+        .breadcrumb
+            .container
+                ul
+                    li(class="main")
+                        a(href="#") 
+                            span Головна
+                    li
+                        span Продукція
+        
+        main
+            section.products-page
+                .container  
+                    h4.products-page__title Продукція
+                    .products-page__items
+                        .products-page__item
+                            .products-page__item-photo
+                                img(src="img/images-jpg/2015616110551.jpg")
+                            .products-page__item-header Теплогенератор біопаливний ГТУ
+                            .products-page__item-body
+                                ul
+                                    li.products-page__item-link 
+                                        a(href="../app/product-item-page.html") Теплогенератор біопаливний ГТУ 1 варіант
+                                    li.products-page__item-link 
+                                        a(href="#") Теплогенератор біопаливний ГТУ 2 варіант
+                                    li.products-page__item-link 
+                                        a(href="#") Теплогенератор біопаливний ГТУ 3 варіант
+                        .products-page__item
+                            .products-page__item-photo
+                                img(src="img/images-jpg/foto0212.jpg")
+                            .products-page__item-header Сушарка зернова шахта
+                            .products-page__item-body
+                                ul
+                                    li.products-page__item-link 
+                                        a(href="#") Сушарка зернова шахта 1 варіант
+                                    li.products-page__item-link 
+                                        a(href="#") Сушарка зернова шахта 2 варіант
+                                    li.products-page__item-link 
+                                        a(href="#") Сушарка зернова шахта 3 варіант
+                        .products-page__item
+                            .products-page__item-photo
+                                img(src="img/images-jpg/2015901120108.jpg")
+                            .products-page__item-header Повітряний теплообмінник ТВ
+                            .products-page__item-body
+                                ul
+                                    li.products-page__item-link 
+                                        a(href="#") Повітряний теплообмінник ТВ 1 варіант
+                                    li.products-page__item-link 
+                                        a(href="#") Повітряний теплообмінник ТВ 2 варіант
+                                    li.products-page__item-link 
+                                        a(href="#") Повітряний теплообмінник ТВ 3 варіант
+        include modules/clients
+        include modules/footer
+    
+        //jQuery Script
+        script(src="https://code.jquery.com/jquery-3.4.1.js")
+     
+        //Fancybox Script
+        script(src="js/jquery.fancybox.min.js")
+
+        //Slick Slider Script
+        script(src="js/slick.js")
+        
+        //Main Script
+        script(src="js/main.js")
